@@ -1,0 +1,49 @@
+import random
+import matplotlib.pyplot as plt
+import numpy as np
+
+biglist = []
+
+x = 2
+y = 5
+
+test = 120
+
+iterations = 1000000
+
+def myfunction():
+    dice = 6
+    for i in range(0, dice):
+        while dice > 0:
+            for i in range (0, dice):
+                roll = (random.randint(1, 6))
+                list.append(roll)
+            count_x = list.count(x)
+            count_y = list.count(y)
+            for i in range(count_x):
+                list.remove(x)
+            for i in range(count_y):
+                list.remove(y)
+            dice = dice - count_x - count_y
+        if dice <= 0:
+            break
+          
+for i in range(iterations):
+    list = []
+    myfunction()
+    biglist.append(sum(list))
+
+big_array = np.asarray(biglist)
+
+values = (big_array > test).sum()
+
+print("The probability of your roll being higher than", test, "is", values*100/iterations, "%")
+print("The standard deviation is", np.std(big_array))
+print("The mean is", np.mean(big_array))
+
+##Plots our array into a histogram
+plt.hist(big_array,
+         bins = np.arange(min(big_array) - 0.5,
+                          max(big_array) + 1.5, 1.0),
+         edgecolor = "k")
+plt.show()
