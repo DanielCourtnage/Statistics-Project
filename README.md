@@ -1,5 +1,5 @@
 # Statistics-Project
-Rolling **n** dice, summing results, removing nulls and repeating
+## Rolling **n** dice, summing results, removing nulls and repeating
 
 This is a write up for a statistics project I did for a friend of mine. They told me they were playing a game where they roll 6 dice, remove all values of 2 and 5, summing the remaining dice, then roll the remaining dice until the sequence terminates. One friend had a roll of 121 and wanted to know the odds (0.33%) of that occurring.
 
