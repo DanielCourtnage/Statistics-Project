@@ -10,7 +10,7 @@ I decided to write this so it can be manipulated for any amount of any sided die
 The full code can be found [here](https://github.com/DanielCourtnage/Statistics-Project/blob/main/Code.python). While below I've written out explanations for each stage.
 
 
-### Part 1: [Imports and Variables](https://github.com/DanielCourtnage/Statistics-Project/blob/main/Imports%20and%20Variable.py)
+### Part 1: [Imports and Variables](https://github.com/DanielCourtnage/Statistics-Project/blob/main/Imports%20and%20Variables.py)
 I start with importing Python packages. **Random** allows me to randomly generate random numbers, **numpy** and **matploblib** will allow me to analyse and plot our results later. The variable **biglist** is created which will store multiple iterations of our function. **x** and **y** are the specific dice rolls we're removing from the pile. If you wish to add or remove more or less dice each time you'll need add another line to the function later on. **test** is the mumber we are testing against. In the original question from my friend they rolled 121 and wanted to know the probability of it (0.33%). Iterations is simply how many times we want to run the function. The closer this number is to infinity, the closer we are to perfectly modelling the probabilty density function. I chose 1,000,000 because that's the highest number my laptop can handle. 
 
 ### Part 2: [MyFunction](https://github.com/DanielCourtnage/Statistics-Project/blob/main/MyFunction.py)
