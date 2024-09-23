@@ -7,7 +7,7 @@ biglist = []
 x = 2
 y = 5
 
-test = 120
+test = 121
 
 iterations = 1000000
 
@@ -41,7 +41,6 @@ print("The probability of your roll being higher than", test, "is", values*100/i
 print("The standard deviation is", np.std(big_array))
 print("The mean is", np.mean(big_array))
 
-##Plots our array into a histogram
 plt.hist(big_array,
          bins = np.arange(min(big_array) - 0.5,
                           max(big_array) + 1.5, 1.0),
